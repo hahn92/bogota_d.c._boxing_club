@@ -99,7 +99,7 @@ nav {
 /* Hero Section */
 #hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/box1.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/box1.png') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;

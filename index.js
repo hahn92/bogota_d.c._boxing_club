@@ -37,25 +37,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Collect form data
-    const formData = {
-        nombre: document.getElementById('nombre').value,
-        email: document.getElementById('email').value,
-        telefono: document.getElementById('telefono').value,
-        mensaje: document.getElementById('mensaje').value
-    };
-    
-    // Show success message (in a real application, you would send this data to a server)
-    alert('¡Gracias por contactarnos! Te responderemos lo antes posible.');
-    contactForm.reset();
-});
-
 // Add scroll event listener for header shadow
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
