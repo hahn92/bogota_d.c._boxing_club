@@ -175,4 +175,35 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+document.querySelectorAll('.fade-in').forEach(element => {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+    observer.observe(element);
+});
+
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('mainHeader');
+    if(window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+document.querySelectorAll('.gallery-item').forEach(element => {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.2 });
+    observer.observe(element);
+});
+
 document.addEventListener('DOMContentLoaded', initCarrusel);
