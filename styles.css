@@ -485,10 +485,17 @@ footer {
     text-decoration: none;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     font-size: 30px;
+    animation: pulse 2s infinite;
 }
 
 .whatsapp-float:hover {
     background-color: #1ebe5d;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 /* Galería */
@@ -591,3 +598,4 @@ footer {
     color: white;
     cursor: pointer;
 }
+
