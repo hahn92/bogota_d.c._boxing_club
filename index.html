@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es" style="font-family: 'Montserrat', var(--font-primary);">
 <head>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bogota DC Boxing Club | Clases de Boxeo en Bogotá">
+    <meta name="twitter:description" content="Gimnasio de boxeo en Bogotá DC. Clases para todos los niveles y edades. ¡Entrena y conviértete en campeón!">
+    <meta name="twitter:image" content="./img/480182268_122189408444360267_8455347028975397632_n.jpg">
     <!-- Datos estructurados para SEO local -->
     <script type="application/ld+json">
     {
@@ -73,11 +78,12 @@
     </section>
 
     <!-- Clases Section -->
-    <section id="clases">
+    <section id="clases" aria-labelledby="clases-titulo" role="region">
         <div class="container">
             <div class="section-title">
                 <h2>Nuestras Clases</h2>
             </div>
+            <h2 id="clases-titulo">Nuestras Clases de Boxeo en Bogotá</h2>
             <div class="clases-grid">
                 <div class="clase-card glass fade-in">
                     <div class="clase-img">
@@ -108,7 +114,7 @@
                 </div>
                 <div class="clase-card glass fade-in">
                     <div class="clase-img">
-                        <img src="./img/box5.png" alt="Clases de Boxeo para Mujeres en Bogotá, defensa personal" loading="lazy">
+                        <img src="./img/box5.png" alt="Clases de Boxeo para Mujeres en Bogotá, defensa personal y fitness" loading="lazy" aria-label="Boxeo para mujeres">
                     </div>
                     <div class="clase-content">
                         <h3>Boxeo para Mujeres</h3>
@@ -117,7 +123,7 @@
                 </div>
                 <div class="clase-card glass fade-in">
                     <div class="clase-img">
-                        <img src="./img/box6.png"  alt="Clases Personalizadas de Boxeo en Bogotá, entrenamiento privado" loading="lazy">
+                        <img src="./img/box6.png"  alt="Clases Personalizadas de Boxeo en Bogotá, entrenamiento privado y personalizado" loading="lazy" aria-label="Boxeo personalizado">
                     </div>
                     <div class="clase-content">
                         <h3>Clases Personalizadas</h3>
@@ -130,7 +136,7 @@
 
     <!-- Social Feed Section -->
     <section id="social-feed">
-        <div class="container">
+        <div class="container" role="region">
             <div class="section-title">
                 <h2>Síguenos en Redes</h2>
             </div>
