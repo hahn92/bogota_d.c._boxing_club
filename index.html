@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" style="font-family: 'Montserrat', var(--font-primary);">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,25 +22,27 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header & Navigation -->
-    <header id="mainHeader">
+    <header id="mainHeader" class="glass-header">
         <div class="container">
             <nav>
                 <div class="logo">
                     <img src="./img/480182268_122189408444360267_8455347028975397632_n.jpg" alt="Bogota DC Boxing Club Logo">
                     <h1>Bogota DC Boxing Club</h1>
                 </div>
-                <button class="menu-btn" id="menuBtn">
+                <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="nav-links" id="navLinks">
                     <a href="#hero">Inicio</a>
                     <a href="#clases">Clases</a>
                     <a href="#social-feed">Social</a>
+                    <a href="#galeria">Galería</a>
                     <a href="#ubicacion">Ubicación</a>
-                    <a href="#ubicacion">Contacto</a>
+                    <a href="#contacto">Contacto</a>
                 </div>
             </nav>
         </div>
@@ -48,9 +50,9 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <h2>Made For Champions</h2>
-        <p>En nuestro gimnasio de boxeo, ofrecemos una variedad de clases para todos los niveles y edades. Ya sea que estés buscando mejorar tu condición física, aprender nuevas habilidades de defensa personal o simplemente divertirte, tenemos algo para ti.</p>
-        <a href="#clases" class="btn">Nuestras Clases</a>
+        <h2 class="hero-title">Made For Champions</h2>
+        <p class="hero-desc">En nuestro gimnasio de boxeo, ofrecemos una variedad de clases para todos los niveles y edades. Ya sea que estés buscando mejorar tu condición física, aprender nuevas habilidades de defensa personal o simplemente divertirte, tenemos algo para ti.</p>
+        <a href="#clases" class="btn btn-hero">Nuestras Clases</a>
     </section>
 
     <!-- Clases Section -->
@@ -60,7 +62,7 @@
                 <h2>Nuestras Clases</h2>
             </div>
             <div class="clases-grid">
-                <div class="clase-card fade-in">
+                <div class="clase-card glass fade-in">
                     <div class="clase-img">
                         <img src="./img/box2.png" alt="Clases de Boxeo Creativo en Bogotá">
                     </div>
@@ -69,7 +71,7 @@
                         <p>Libera tu creatividad y exprésate a través del movimiento en nuestras clases de boxeo creativo. Aprenderás a combinar golpes y movimientos de baile para crear una experiencia única y divertida.</p>
                     </div>
                 </div>
-                <div class="clase-card fade-in">
+                <div class="clase-card glass fade-in">
                     <div class="clase-img">
                         <img src="./img/box3.png" alt="Entrenamiento de Boxeo Competitivo en Bogotá">
                     </div>
@@ -78,7 +80,7 @@
                         <p>Si estás buscando llevar tus habilidades al siguiente nivel, nuestro programa de boxeo competitivo es para ti. Trabajarás con entrenadores expertos que te ayudarán a alcanzar tus metas y competir en torneos.</p>
                     </div>
                 </div>
-                <div class="clase-card fade-in">
+                <div class="clase-card glass fade-in">
                     <div class="clase-img">
                         <img src="./img/box4.png" alt="Clases de Boxeo para Niños en Bogotá">
                     </div>
@@ -87,7 +89,7 @@
                         <p>El boxeo es una excelente manera para que los niños aprendan disciplina, coordinación y respeto. Nuestras clases de boxeo para niños están diseñadas para enseñarles los fundamentos del boxeo de una manera divertida y segura.</p>
                     </div>
                 </div>
-                <div class="clase-card fade-in">
+                <div class="clase-card glass fade-in">
                     <div class="clase-img">
                         <img src="./img/box5.png" alt="Clases de Boxeo para Mujeres en Bogotá">
                     </div>
@@ -96,7 +98,7 @@
                         <p>Nuestro gimnasio es un espacio seguro y acogedor para que las mujeres aprendan y practiquen boxeo. Ofrecemos clases especiales para mujeres, donde podrás entrenar con otras mujeres que comparten tus mismos objetivos.</p>
                     </div>
                 </div>
-                <div class="clase-card fade-in">
+                <div class="clase-card glass fade-in">
                     <div class="clase-img">
                         <img src="./img/box6.png"  alt="Clases Personalizadas de Boxeo en Bogotá">
                     </div>
@@ -258,17 +260,20 @@
                 <h2>Bogota DC Boxing Club</h2>
                 <p>Made For Champions</p>
             </div>
-            <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=61573070797428" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/bogota_d.c._boxing_club/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/573118676337" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
-            <div class="footer-nav">
-                <a href="#hero">Inicio</a>
-                <a href="#clases">Clases</a>
-                <a href="#social-feed">Social</a>
-                <a href="#ubicacion">Ubicación</a>
-                <a href="#ubicacion">Contacto</a>
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <a href="#hero">Inicio</a>
+                    <a href="#clases">Clases</a>
+                    <a href="#social-feed">Social</a>
+                    <a href="#galeria">Galería</a>
+                    <a href="#ubicacion">Ubicación</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61573070797428" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/bogota_d.c._boxing_club/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/573118676337" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 Bogota DC Boxing Club. Todos los derechos reservados.</p>
