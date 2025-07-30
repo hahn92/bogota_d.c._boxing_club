@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es" style="font-family: 'Montserrat', var(--font-primary);">
 <head>
+    <!-- Cache-Control para recursos estáticos -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bogota DC Boxing Club | Clases de Boxeo en Bogotá">
@@ -43,7 +45,9 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">  <!--  Crea un favicon y reemplaza la ruta -->
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <!-- En desarrollo usa styles.css, en producción usa styles.min.css -->
+    <link rel="stylesheet" href="styles.css" id="css-dev">
+    <link rel="stylesheet" href="styles.min.css" id="css-prod" disabled>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -305,7 +309,9 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="index.js"></script>
+    <!-- En desarrollo usa index.js, en producción usa index.min.js -->
+    <script src="index.js" id="js-dev"></script>
+    <script src="index.min.js" id="js-prod" disabled></script>
     <!-- Botón Flotante -->
     <a href="https://wa.me/573118676337" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>

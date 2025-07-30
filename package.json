@@ -1,0 +1,13 @@
+{
+  "name": "bogota-dc-boxing-club",
+  "version": "1.0.0",
+  "description": "Sitio web del gimnasio Bogota DC Boxing Club",
+  "scripts": {
+    "minify:js": "terser index.js -o index.min.js --compress --mangle",
+    "minify:css": "cssnano styles.css styles.min.css"
+  },
+  "devDependencies": {
+    "terser": "^5.30.3",
+    "cssnano": "^6.0.1"
+  }
+}
